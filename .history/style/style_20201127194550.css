@@ -9,10 +9,6 @@
   --text-color: #e7e7e7;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .calc-display,
 .title {
   font-family: "Saira Stencil One", cursive;
@@ -48,7 +44,7 @@
   width: 300px;
   height: 35%;
   background-color: var(--display-color);
-  color: var(--text-color);
+  color: var(--primary-color);
   border-radius: 10px;
   font-size: 40px;
 }
@@ -62,7 +58,6 @@
 }
 
 .calc-button {
-  cursor: pointer;
   font-size: 20px;
   color: var(--text-color);
   background-color: var(--secondary-color);
@@ -70,25 +65,13 @@
   border: none;
 }
 
-.calc-button:hover {
-  background-color: #3f3f3f;
-}
-
 .calc-button-operation {
   background-color: var(--secondary-btn-color);
-}
-
-.calc-button-operation:hover {
-  background-color: #ff8800;
 }
 
 .calc-button-secondary {
   background-color: var(--primary-btn-color);
   color: var(--background-color);
-}
-
-.calc-button-secondary:hover {
-  background-color: #969696;
 }
 
 .c-btn {

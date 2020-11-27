@@ -78,17 +78,9 @@
   background-color: var(--secondary-btn-color);
 }
 
-.calc-button-operation:hover {
-  background-color: #ff8800;
-}
-
 .calc-button-secondary {
   background-color: var(--primary-btn-color);
   color: var(--background-color);
-}
-
-.calc-button-secondary:hover {
-  background-color: #969696;
 }
 
 .c-btn {
