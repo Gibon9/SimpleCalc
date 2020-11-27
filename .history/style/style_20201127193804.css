@@ -3,7 +3,7 @@
 :root {
   --background-color: #010101;
   --display-color: black;
-  --primary-btn-color: #a5a5a5;
+  --primary-btn-color: ##a5a5a5;
   --secondary-color: #333333;
   --secondary-btn-color: #fd9624;
   --text-color: #e7e7e7;
@@ -36,7 +36,7 @@
   width: 350px;
   height: 600px;
   background-color: var(--background-color);
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .calc-display {
@@ -67,11 +67,6 @@
 
 .calc-button-operation {
   background-color: var(--secondary-btn-color);
-}
-
-.calc-button-secondary {
-  background-color: var(--primary-btn-color);
-  color: var(--background-color);
 }
 
 .c-btn {

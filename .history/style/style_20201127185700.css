@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Saira+Stencil+One&display=swap");
+
+:root {
+  --background-color: #010101;
+  --display-color: black;
+  --primary-btn-color: ##a5a5a5;
+  --secondary-color: #333333;
+  --secondary-btn-color: #fd9624;
+  --text-color: #e7e7e7;
+}
+
+.calc-display,
+.title {
+  font-family: "Saira Stencil One", cursive;
+}
+
+.calc-button {
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.title {
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.clac {
+  width: 350px;
+  height: 500px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+}
+
+.calc-display {
+  margin: 20px auto;
+  width: 300px;
+  height: 35%;
+  background-color: var(--display-color);
+  color: var(--primary-color);
+  border-radius: 10px;
+  font-size: 40px;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  column-gap: 5px;
+}
+
+.calc-button {
+  font-size: 20px;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  border: none;
+}
+
+.c-btn {
+  grid-column: 2/4;
+  grid-row: 2/4;
+}

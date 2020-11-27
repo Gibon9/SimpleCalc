@@ -3,7 +3,7 @@
 :root {
   --background-color: #010101;
   --display-color: black;
-  --primary-btn-color: #a5a5a5;
+  --primary-btn-color: ##a5a5a5;
   --secondary-color: #333333;
   --secondary-btn-color: #fd9624;
   --text-color: #e7e7e7;
@@ -36,7 +36,7 @@
   width: 350px;
   height: 600px;
   background-color: var(--background-color);
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .calc-display {
@@ -50,11 +50,10 @@
 }
 
 .keyboard {
-  height: 70%;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  gap: 5px 5px;
+  column-gap: 5px;
 }
 
 .calc-button {
@@ -63,15 +62,6 @@
   background-color: var(--secondary-color);
   border-radius: 50%;
   border: none;
-}
-
-.calc-button-operation {
-  background-color: var(--secondary-btn-color);
-}
-
-.calc-button-secondary {
-  background-color: var(--primary-btn-color);
-  color: var(--background-color);
 }
 
 .c-btn {
@@ -94,78 +84,22 @@
   grid-row: 1/3;
 }
 
-.seven-btn {
+.one-btn {
   grid-column: 2/4;
   grid-row: 3/5;
 }
 
-.eight-btn {
-  grid-column: 4/6;
+.two-btn {
+  grid-column: 2/4;
   grid-row: 3/5;
 }
 
-.nine-btn {
-  grid-column: 6/8;
-  grid-row: 3/5;
-}
-
-.multiply-btn {
-  grid-column: 8/10;
+.three-btn {
+  grid-column: 2/4;
   grid-row: 3/5;
 }
 
 .four-btn {
   grid-column: 2/4;
-  grid-row: 5/7;
-}
-
-.five-btn {
-  grid-column: 4/6;
-  grid-row: 5/7;
-}
-
-.six-btn {
-  grid-column: 6/8;
-  grid-row: 5/7;
-}
-
-.minus-btn {
-  grid-column: 8/10;
-  grid-row: 5/7;
-}
-
-.one-btn {
-  grid-column: 2/4;
-  grid-row: 7/9;
-}
-
-.two-btn {
-  grid-column: 4/6;
-  grid-row: 7/9;
-}
-
-.three-btn {
-  grid-column: 6/8;
-  grid-row: 7/9;
-}
-
-.plus-btn {
-  grid-column: 8/10;
-  grid-row: 7/9;
-}
-
-.zero-btn {
-  grid-column: 2/6;
-  grid-row: 9/11;
-  border-radius: 50px;
-}
-
-.coma-btn {
-  grid-column: 6/8;
-  grid-row: 9/11;
-}
-
-.equal-btn {
-  grid-column: 8/10;
-  grid-row: 9/11;
+  grid-row: 3/5;
 }
