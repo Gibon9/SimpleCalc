@@ -2,35 +2,25 @@ const display = document.getElementById("display");
 const keyboard = document.getElementById("keyboard");
 const buttons = document.querySelectorAll(".calc-button");
 
-let result = 0;
-let displayStr = "";
+const num = 0;
 
-function displayNumber(event) {
-  displayStr += `${event.target.innerText}`;
-  display.innerText = displayStr;
+function displayNumber() {
+  num += parseInt(e.target.innerText);
+  displayNumber.innerText = num;
 }
 
 keyboard.addEventListener("click", (e) => {
   if (e.target.id === "btn1") {
-    displayNumber(e);
+    displayNumber();
   } else if (e.target.id === "btn2") {
-    displayNumber(e);
   } else if (e.target.id === "btn3") {
-    displayNumber(e);
   } else if (e.target.id === "btn4") {
-    displayNumber(e);
   } else if (e.target.id === "btn5") {
-    displayNumber(e);
   } else if (e.target.id === "btn6") {
-    displayNumber(e);
   } else if (e.target.id === "btn7") {
-    displayNumber(e);
   } else if (e.target.id === "btn8") {
-    displayNumber(e);
   } else if (e.target.id === "btn9") {
-    displayNumber(e);
   } else if (e.target.id === "btn0") {
-    displayNumber(e);
   } else if (e.target.id === "plus-minus") {
   } else if (e.target.id === "percent") {
   } else if (e.target.id === "clear") {
