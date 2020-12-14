@@ -10,11 +10,6 @@ function displayNumber(event) {
   display.innerText = displayStr;
 }
 
-function clearDisplay() {
-  displayStr = "";
-  display.innerText = displayStr;
-}
-
 keyboard.addEventListener("click", (e) => {
   if (e.target.id === "btn1") {
     displayNumber(e);
@@ -40,7 +35,8 @@ keyboard.addEventListener("click", (e) => {
   } else if (e.target.id === "percent") {
     displayNumber(e);
   } else if (e.target.id === "clear") {
-    clearDisplay();
+    displayStr = "";
+    display.innerText = displayStr;
   } else if (e.target.id === "plus") {
     displayNumber(e);
   } else if (e.target.id === "minus") {
@@ -50,7 +46,7 @@ keyboard.addEventListener("click", (e) => {
   } else if (e.target.id === "multiply") {
     displayNumber(e);
   } else if (e.target.id === "equal") {
-    clearDisplay();
+    display.innerText = "";
   } else if (e.target.id === "coma") {
     displayNumber(e);
   }
